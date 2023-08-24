@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | SAGARA TECH</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./public/logo.svg" type="image/x-icon" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-side">
+        <a href="/">
+          <img src="./public/logo.svg" alt="logo" width="150" height="150" />
+        </a>
+        <div class="form">
+          <h1 class="bold">Login</h1>
+          <div class="input-block">
+            <label for="email">Email Address</label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Masukkan email yang sudah terdaftar"
+              class="input"
+            />
+          </div>
+          <div class="input-block">
+            <div class="flex-between">
+              <label for="password">Kata Sandi</label>
+              <a href="/forgot-password">Lupa kata sandi</a>
+            </div>
+            <input
+              type="password"
+              id="password"
+              placeholder="Kata sandi yang sudah terdaftar"
+              class="input"
+            />
+          </div>
+          <h4 id="error-password" class="error-password">
+            Kata sandi harus minimal 8 karakter
+          </h4>
+          <button id="login-btn" class="login-btn">Login</button>
+        </div>
+        <div></div>
+        <div></div>
+      </div>
+      <div class="right-side">
+        <img src="./public/center.svg" alt="center" width="600" height="600" />
+        <div class="corner"></div>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
